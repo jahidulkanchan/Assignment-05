@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate_Bangladesh</title>
+  <link rel="shortcut icon" href="images/donate.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-theme="light">
+  <header class="flex items-center sticky top-0 w-full backdrop-blur-md bg-opacity-60 justify-between px-3 lg:px-20 bg-gray-100 min-h-[100px]">
+    <nav class="flex items-center px-3 justify-between w-full">
+      <div><button id="blog-btn" class="bg-lime-300 py-3 px-8 font-semibold rounded-lg">Blog</button></div>
+      <div class="flex items-center gap-2"><img class="w-[33px] sm:w-[40px]" src="images/logo.png" alt=""><span class="text-2xl hidden sm:inline-block font-semibold">Donate Bangladesh</span></div>
+      <div class="flex gap-2 items-center text-lg sm:text-xl font-semibold">
+        <span><img class="w-[30px]" src="images/coin.png" alt=""></span><span id="reserve-balance">5500</span><span> BDT</span>
+      </div>
+    </nav>
+  </header>
+  <div class="primary-btn z-[999999] bg-[#ffffff7f] shadow backdrop-blur-md gap-5  fixed w-full text-xl py-5 flex justify-center">
+    <button id="donate-btn" class="bg-lime-300 border py-3 px-8 font-semibold w-fit rounded-lg">Donate</button>
+    <button id="history-btn" class=" border bg-slate-100 py-3 px-8 font-semibold w-fit rounded-lg">History</button>
+  </div>
+ 
+  <script src="script/index.js"></script>
+  <script src="script/utilities.js"></script>
+</body>
+</html>

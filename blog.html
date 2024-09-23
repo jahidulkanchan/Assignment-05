@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate_Bangladesh</title>
+  <link rel="shortcut icon" href="images/donate.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-theme="light">
+  <header class="flex items-center sticky top-0 w-full backdrop-blur-md bg-opacity-60 justify-between px-3 lg:px-20 bg-gray-100 min-h-[100px]">
+    <nav class="flex items-center px-3 justify-between w-full">
+      <div><button id="home-btn" class="bg-lime-300 py-3 px-8 font-semibold rounded-lg">Home</button></div>
+      <div class="flex items-center gap-2"><img class="w-[33px] sm:w-[40px]" src="images/logo.png" alt=""><span class="text-2xl hidden sm:inline-block font-semibold">Donate Bangladesh</span></div>
+      <div class="flex gap-2 items-center text-lg sm:text-xl font-semibold">
+        <span><img class="w-[30px]" src="images/coin.png" alt=""></span><span id="reserve-balance">5500</span><span> BDT</span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="container py-12 w-11/12 lg:w-4/5 mx-auto px-3 md:px-20">
+        <h2 class="text-3xl font-bold">Important FAQ <span><i class="fa-regular text-2xl fa-circle-question"></i></span></h2>
+        <div class="mx-auto mt-10">
+          <div class="space-y-4">
+            <!-- Item 1 -->
+            <div class="border rounded">
+              <button
+                class="w-full text-left text-xl p-4 bg-gray-200 font-semibold flex justify-between items-center"
+                onclick="toggleFaq(1)"
+              >
+              What is the DOM in JavaScript?
+                <span id="icon-1" class="transform transition-transform duration-300"><i class="fa-solid fa-minus text-lg"></i></span>
+              </button>
+              <div id="content-1" class="p-4 transition-all duration-300 ease-in-out">
+                <p>The DOM (Document Object Model) is a programming interface that represents the structure of a webpage as a tree of objects. Each HTML element on the page is treated as an object, which JavaScript can manipulate. This allows developers to dynamically change the content, structure, and style of the webpage. By using the DOM, JavaScript can access and modify elements through methods like getElementById or querySelector, enabling interactive and dynamic web pages.</p>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="border rounded">
+              <button
+                class="w-full text-left text-xl p-4 bg-gray-200 font-semibold flex justify-between items-center"
+                onclick="toggleFaq(2)"
+              >
+              How do you select an element from the DOM?
+                <span id="icon-2" class="transform transition-transform duration-300"><i class="fa-solid fa-plus text-lg"></i></span>
+              </button>
+              <div id="content-2" class="p-4 hidden transition-all duration-300 ease-in-out">
+                <p>To select elements from the DOM, various methods can be used depending on the type of selection. document.getElementById(id) is used to select an element by its unique ID, while document.getElementsByClassName(class) and document.getElementsByTagName(tag) select elements by their class or tag name, respectively. document.querySelector(selector) selects the first element that matches a given CSS selector, and document.querySelectorAll(selector) selects all elements that match the selector.</p>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="border rounded">
+              <button
+                class="w-full text-left text-xl  p-4 bg-gray-200 font-semibold flex justify-between items-center"
+                onclick="toggleFaq(3)"
+              >
+              How can you add or remove HTML elements dynamically using the DOM?
+                <span id="icon-3" class="transform transition-transform duration-300"><i class="fa-solid fa-plus text-lg"></i></span>
+              </button>
+              <div id="content-3" class="p-4 hidden transition-all duration-300 ease-in-out">
+                <p>HTML elements can be added or removed dynamically using JavaScript methods. To add an element, you can create it using document.createElement(), set its content or attributes, and then append it to the DOM using appendChild() or insertBefore(). To remove an element, you can use removeChild() or parentNode.removeChild() to detach it from the DOM. Additionally, innerHTML can be used to insert or remove elements by updating the entire HTML content of an element.</p>
+              </div>
+            </div>
+             <!-- Item 4 -->
+            <div class="border rounded">
+              <button
+                class="w-full text-left text-xl p-4 bg-gray-200 font-semibold flex justify-between items-center"
+                onclick="toggleFaq(4)"
+              >
+              What is event delegation in the DOM?
+                <span id="icon-4" class="transform transition-transform duration-300"><i class="fa-solid fa-plus text-lg"></i></span>
+              </button>
+              <div id="content-4" class="p-4 hidden transition-all duration-300 ease-in-out">
+                <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events for its child elements. This approach leverages event bubbling, where events propagate from the target element up through its ancestors. By using event delegation, instead of attaching listeners to multiple child elements, you can manage events from a central parent node. This method improves performance and makes handling dynamic elements, like lists with many items, more efficient.</p>
+              </div>
+            </div>
+          </div>
+      </div>         
+    </section>
+  </main>
+  <script src="script/blog.js"></script>
+</body>
+</html>
