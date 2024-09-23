@@ -12,6 +12,20 @@ historyBtn.addEventListener("click", ()=>{
 });
 
 
+// Change Html file ====================
+document.getElementById('blog-btn').addEventListener('click', ()=>{
+  window.location.href = "./blog.html";
+});
+
+// Modal Function  ==================================
+const modal = document.getElementById("modal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+closeModalBtn.addEventListener("click", () =>{
+  modal.classList.add('hidden');
+})
+
+
+
 // ====================== ( Donation Place Number-1 )  =========================
 
 document.getElementById("donate-btn-1").addEventListener('click', (e)=>{
